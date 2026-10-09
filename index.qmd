@@ -1,0 +1,39 @@
+---
+title: "Carlos Gallego-Moll"
+pagetitle: "Carlos Gallego-Moll | Health Economist"
+about:
+  template: trestles
+  # image: assets/photo.jpg      # add a square portrait here when available
+  # image-shape: round
+  links:
+    - icon: mortarboard-fill
+      text: Google Scholar
+      href: https://scholar.google.com/citations?user=HgohTeMAAAAJ
+    - icon: person-vcard
+      text: ORCID
+      href: https://orcid.org/0000-0001-7215-4584
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/carlos-gallego-economist-datascientist/
+    - icon: github
+      text: GitHub
+      href: https://github.com/cgallegom
+---
+
+Health economist. PhD candidate in Economics, Management and Organization at the Universidad Pública de Navarra, and Research Assistant in the Department of Econometrics, Statistics and Applied Economics at the Universitat de Barcelona.
+
+My research uses applied microeconometrics and causal inference to study how health systems perform: the quality and efficiency of hospital care, the use of health services, and the effects of system-wide shocks such as COVID-19 on primary care. I complement identification strategies with interpretable machine learning, mainly to study prediction and heterogeneity, for example to explain variation in avoidable hospitalisations. My work draws on large administrative health datasets from Catalonia.
+
+I am a member of the [Research Group on Governments and Markets (GiM)](https://www.ub.edu/gim/) and the [Observatory of Analysis and Evaluation of Public Policies (OAP)](https://www.ub.edu/oap/membres/) at the Universitat de Barcelona, and an associated researcher at the [Centre for Research in Health Economics (CRES-UPF)](https://www.upf.edu/web/cres/investigadors-associats/-/asset_publisher/hPWH34g7unc2/content/gallego-moll-carlos).
+
+## News
+
+::: {.plain}
+- [Sep 2026]{.when} Presented at the XX International Business Economics Workshop (IBEW), Universitat de les Illes Balears, Mallorca.
+- [Jun 2026]{.when} Awarded **Best Oral Communication Based on a Doctoral Thesis** at the XLV Spanish Health Economics Association Meeting, Sevilla.
+- [May–Aug 2026]{.when} Visiting researcher at the Department of Health Policy, London School of Economics and Political Science.
+- [Apr 2026]{.when} Co-organised the Workshop on Economics of Ageing at the Universitat de Barcelona.
+- [2026]{.when} New working paper: [Quality and efficiency differences between private and public hospitals in Catalonia and Norway](https://www.ub.edu/irea/working_papers/2026/202611.pdf) (IREA Working Paper 2026/11).
+:::
+
+See [Research](research.qmd) for publications, working papers and projects.

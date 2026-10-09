@@ -1,0 +1,150 @@
+#!/usr/bin/env Rscript
+# Pre-render step (see `project: pre-render` in _quarto.yml).
+# Builds Markdown fragments in _generated/ from data/own-bib.bib:
+#   _generated/publications.md   journal articles, grouped by year
+#   _generated/working-papers.md technical reports / working papers
+#
+# If the private CV repo is next to this folder, its own-bib.bib is copied
+# over data/own-bib.bib first, so the CV bibliography stays the source of truth.
+
+if (!requireNamespace("bib2df", quietly = TRUE)) {
+  stop('Package "bib2df" is needed: install.packages("bib2df")')
+}
+suppressPackageStartupMessages(library(bib2df))
+
+site_bib <- file.path("data", "own-bib.bib")
+cv_bib   <- file.path("..", "Carlos_Gallego___CV", "own-bib.bib")
+if (file.exists(cv_bib)) {
+  file.copy(cv_bib, site_bib, overwrite = TRUE)
+  message("[bib] Synced ", normalizePath(cv_bib), " -> ", site_bib)
+}
+
+me <- "Gallego-Moll"  # family name to highlight in bold
+
+clean <- function(x) {
+  if (is.null(x) || length(x) == 0 || is.na(x)) return(NA_character_)
+  x <- gsub("[{}]", "", x)
+  x <- gsub("--", "–", x, fixed = TRUE)
+  trimws(x)
+}
+
+has <- function(x) !is.null(x) && length(x) > 0 && !is.na(x) && nzchar(trimws(x))
+
+doi_url <- function(doi) {
+  if (!has(doi)) return(NA_character_)
+  doi <- sub("^https?://(dx\\.)?doi\\.org/", "", trimws(doi))
+  paste0("https://doi.org/", doi)
+}
+
+parse_author <- function(a) {
+  a <- clean(a)
+  if (grepl("^on behalf", a, ignore.case = TRUE)) {
+    return(list(family = a, initials = "", literal = TRUE))
+  }
+  if (grepl(",", a, fixed = TRUE)) {
+    p <- trimws(strsplit(a, ",", fixed = TRUE)[[1]])
+    family <- p[1]; given <- p[2]
+  } else {
+    tok <- strsplit(a, "\\s+")[[1]]
+    family <- tok[length(tok)]
+    given <- paste(tok[-length(tok)], collapse = " ")
+  }
+  toks <- strsplit(given, "\\s+")[[1]]
+  initials <- paste0(toupper(substr(toks, 1, 1)), ".", collapse = " ")
+  list(family = family, initials = initials, literal = FALSE)
+}
+
+fmt_one <- function(p) {
+  s <- if (p$literal) p$family else paste0(p$family, ", ", p$initials)
+  if (identical(p$family, me)) s <- paste0("**", s, "**")
+  s
+}
+
+# All authors if <= max_full; otherwise first three, then me, then "et al."
+format_authors <- function(auth, max_full = 8) {
+  # BibTeX "and others" arrives as an author called "others"
+  others <- tolower(trimws(vapply(auth, clean, ""))) == "others"
+  auth <- auth[!others]
+  et_al <- any(others)
+  parsed <- lapply(auth, parse_author)
+  n <- length(parsed)
+  if (n <= max_full) {
+    s <- vapply(parsed, fmt_one, "")
+    if (et_al) return(paste0(paste(s, collapse = ", "), ", et al."))
+    if (n == 1) return(s)
+    if (n == 2) return(paste(s, collapse = " & "))
+    return(paste0(paste(s[-n], collapse = ", "), ", & ", s[n]))
+  }
+  first <- paste(vapply(parsed[1:3], fmt_one, ""), collapse = ", ")
+  idx <- which(vapply(parsed, function(p) identical(p$family, me), TRUE))
+  if (length(idx) && idx[1] > 3) {
+    paste0(first, ", …, ", fmt_one(parsed[[idx[1]]]), ", et al.")
+  } else {
+    paste0(first, ", et al.")
+  }
+}
+
+linked_title <- function(title, link) {
+  ends_punct <- grepl("[?!.]$", title)
+  t <- sub("\\.$", "", title)
+  out <- if (has(link)) sprintf("[%s](%s)", t, link) else t
+  if (ends_punct && grepl("[?!]$", title)) out else paste0(out, ".")
+}
+
+col <- function(r, name) if (name %in% names(r)) r[[name]] else NA
+
+bib <- bib2df(site_bib)
+bib$YEAR <- as.integer(bib$YEAR)
+bib <- bib[order(-bib$YEAR), ]
+
+entry_article <- function(r) {
+  link <- doi_url(col(r, "DOI"))
+  if (!has(link)) link <- col(r, "URL")
+  vol  <- clean(col(r, "VOLUME")); iss <- clean(col(r, "NUMBER"))
+  pg   <- clean(col(r, "PAGES"))
+  if (!has(pg)) pg <- clean(col(r, "ARTICLE.NUMBER"))
+  if (has(pg)) pg <- gsub("(?<=\\d)-(?=\\d)", "–", pg, perl = TRUE)  # page ranges
+  vi <- if (has(vol)) paste0(vol, if (has(iss)) paste0("(", iss, ")") else "") else NA_character_
+  bits <- c(sprintf("*%s*", clean(r$JOURNAL)), if (has(vi)) vi, if (has(pg)) pg)
+  sprintf("%s (%d). %s %s.",
+          format_authors(r$AUTHOR[[1]]), r$YEAR,
+          linked_title(clean(r$TITLE), link),
+          paste(bits, collapse = ", "))
+}
+
+entry_report <- function(r) {
+  link <- col(r, "URL"); if (!has(link)) link <- doi_url(col(r, "DOI"))
+  series <- paste(c(clean(col(r, "TYPE")), clean(col(r, "NUMBER")))[c(has(col(r, "TYPE")), has(col(r, "NUMBER")))], collapse = " ")
+  inst <- clean(col(r, "INSTITUTION"))
+  tail <- paste(c(if (nzchar(series)) sprintf("*%s*", series), if (has(inst)) inst), collapse = ", ")
+  sprintf("%s (%d). %s %s.",
+          format_authors(r$AUTHOR[[1]]), r$YEAR,
+          linked_title(clean(r$TITLE), link), tail)
+}
+
+wrap <- function(txt) c("::: {.pub}", txt, ":::", "")
+
+write_md <- function(lines, path) {
+  dir.create(dirname(path), showWarnings = FALSE, recursive = TRUE)
+  con <- file(path, "w", encoding = "UTF-8"); on.exit(close(con))
+  writeLines(c("<!-- Generated by scripts/build_publications.R from data/own-bib.bib. Do not edit. -->", "", lines), con)
+}
+
+# Journal articles, grouped by year
+arts <- bib[bib$CATEGORY == "ARTICLE", ]
+out <- character()
+for (y in unique(arts$YEAR)) {
+  out <- c(out, sprintf("### %d", y), "")
+  for (i in which(arts$YEAR == y)) out <- c(out, wrap(entry_article(arts[i, ])))
+}
+write_md(out, file.path("_generated", "publications.md"))
+
+# Working papers / technical reports
+wps <- bib[bib$CATEGORY == "TECHREPORT", ]
+out <- character()
+for (i in seq_len(nrow(wps))) out <- c(out, wrap(entry_report(wps[i, ])))
+write_md(out, file.path("_generated", "working-papers.md"))
+
+other <- setdiff(unique(bib$CATEGORY), c("ARTICLE", "TECHREPORT"))
+if (length(other)) message("[bib] Skipped entry types: ", paste(other, collapse = ", "))
+message(sprintf("[bib] %d articles, %d working papers written to _generated/", nrow(arts), nrow(wps)))

@@ -1,0 +1,66 @@
+---
+title: "Research"
+description: "Publications, working papers and projects of Carlos Gallego-Moll in health economics, applied microeconometrics and causal inference."
+toc: true
+toc-location: right
+toc-title: "On this page"
+---
+
+## Research agenda
+
+My work centres on health economics and policy evaluation. The main lines are:
+
+- **Hospital quality, efficiency and ownership.** Differences in outcomes and efficiency between public and private hospitals, including elective surgery in Catalonia.
+- **Primary care and system shocks.** Effects of the intensity of COVID-19 on primary care models and outcomes, using continuous difference-in-differences designs.
+- **Healthcare utilisation and avoidable hospitalisations.** Explaining variation across patients and providers, with interpretable machine learning as a complement to econometric analysis.
+- **Multimorbidity, ageing and resource use.** The burden and health-care costs of chronic and multiple long-term conditions.
+
+Methods: applied microeconometrics, causal inference (difference-in-differences), interpretable machine learning and evidence synthesis.
+
+## Working papers
+
+{{< include _generated/working-papers.md >}}
+
+## Work in progress
+
+::: {.pub}
+"From Patients to Providers: Explaining Variation in Avoidable Hospitalizations with Interpretable Machine Learning". Single-authored. *Revise and resubmit.*
+:::
+
+::: {.pub}
+"Impact of COVID-19 Intensity on Primary Care Model and Outcomes: A Continuous Difference-in-Differences Approach". With Laia Maynou (UB) and Concepció Violán-Fors (IDIAPJGol).
+:::
+
+::: {.pub}
+"Public and Private Hospital Care in Catalan Elective Surgery: Average Differences and Patient-level Heterogeneity". With Laia Maynou (UB).
+:::
+
+::: {.pub}
+"The Progressive Burden of Bronchiectasis: Comparing Quality of Life Outcomes Between Hospitalised and Non-Hospitalised Patients". With Laia Maynou (UB) and Alistair McGuire (LSE). *Revise and resubmit.*
+:::
+
+::: {.pub}
+"Models of care for people living with multimorbidity in primary care settings: a scoping review protocol of Primary Health Care-oriented approaches". With the MM-SNS team. *Submitted.*
+:::
+
+## Publications
+
+{{< include _generated/publications.md >}}
+
+## Research projects
+
+Participation in competitive research projects:
+
+::: {.plain}
+- [2025–2028]{.when} **DIGI-PYR**, Interreg VI-A POCTEFA (EFA164/05). *Digital transformation in the cross-border mountain areas of the Eastern Pyrenees.* PI: Daniel Albalate (Universitat de Barcelona).
+- [Ongoing]{.when} **Ageing and Health: an analysis of needs, demand and supply**, MICIU/AEI and NextGenerationEU/PRTR (CNS2023-144351). PI: Laia Maynou.
+- [2021–2025]{.when} **GEMINI**: Genetic Evaluation of Multimorbidity towards INdividualisation of Interventions, UKRI Medical Research Council Strategic Priorities Fund (MR/W014548/1). PI: Timothy Frayling.
+- [Ongoing]{.when} **MM-SNS**: Multimorbidity in the Spanish National Health System, Instituto de Salud Carlos III (PI22-01651). PI: Isabel del Cura González.
+:::
+
+## Interactive tools
+
+::: {.plain}
+- [Percepciones de desigualdad](https://cgallegom.shinyapps.io/percepciones_desigualdad/): Shiny app to explore perceptions of inequality (in Spanish).
+- [GEMINI multimorbidity atlas](https://gemini-multimorbidity.shinyapps.io/atlas/): Shiny app accompanying the [eBioMedicine paper](https://doi.org/10.1016/j.ebiom.2025.105584).
+:::

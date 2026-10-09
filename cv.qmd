@@ -1,0 +1,87 @@
+---
+title: "Curriculum Vitae"
+description: "Education, employment, grants and academic service of Carlos Gallego-Moll."
+---
+
+<!-- A downloadable PDF of the CV is intentionally not offered yet.
+     When it is ready, add a link here, e.g. [Download CV (PDF)](assets/cv.pdf). -->
+
+## Employment
+
+|  |  |
+|---|---|
+| Oct 2024 – present | **Research Assistant in Economics**, Universitat de Barcelona |
+| Mar 2022 – Oct 2024 | **Data Scientist / Researcher**, Foundation University Institute for Primary Health Care Research Jordi Gol (IDIAPJGol) |
+
+: {.cv-table tbl-colwidths="[24,76]"}
+
+## Education
+
+|  |  |
+|---|---|
+| 2026 (expected) | **Ph.D. Candidate**, Economics, Management and Organization, Universidad Pública de Navarra |
+| 2021 | **M.Sc. Big Data & Data Science applied to Economics and Business Administration**, Universidad Nacional de Educación a Distancia |
+| 2020 | **M.Sc. Economics, Regulation and Competition in Public Services**, Universitat de Barcelona |
+| 2019 | **B.Sc. Economics**, Universitat de les Illes Balears |
+
+: {.cv-table tbl-colwidths="[24,76]"}
+
+## Research stay
+
+|  |  |
+|---|---|
+| May – Aug 2026 | **Visiting researcher**, Department of Health Policy, London School of Economics and Political Science |
+
+: {.cv-table tbl-colwidths="[24,76]"}
+
+## Grants and awards
+
+|  |  |
+|---|---|
+| 2026 | Best Oral Communication Based on a Doctoral Thesis, XLV Spanish Health Economics Association Meeting, Sevilla |
+| 2026 | Mobility Grant, Societat Econòmica Barcelonesa d'Amics del País (SEBAP) |
+| 2025 | Research Grant, Observatori d'Anàlisi i Avaluació de Polítiques Públiques (OAP), Universitat de Barcelona |
+| 2025 | Research Training Grant for Early Careers, Health Economics Association |
+| 2021 | Second prize, final project research competition of the Big Data & Data Science master's degree |
+| 2017 | Erasmus scholarship, Kraków, Poland |
+
+: {.cv-table tbl-colwidths="[24,76]"}
+
+## Further training
+
+|  |  |
+|---|---|
+| 2025 | Quantitative Methods for Public Policy Evaluation (6 ECTS), Barcelona School of Economics |
+| 2025 | Difference-in-Differences with Panel Data (6 ECTS), Barcelona School of Economics |
+| 2023 | Application of epidemiological methods in aging research (1.5 ECTS), Karolinska Institute, Sweden |
+| 2023 | Multimorbidity: potential applicability of research results in the NHS (14 + 15 h), RICAPPS, IACS and IIS, Government of Aragón |
+| 2020 | Renewable Energies. Financial Modelling (12 h), Foundation for Financial Studies and Spanish Institute of Financial Analysts |
+
+: {.cv-table tbl-colwidths="[24,76]"}
+
+## Academic service
+
+|  |  |
+|---|---|
+| 2026 | Co-organiser (Local Organising Committee), *Workshop on Economics of Ageing*, Universitat de Barcelona, April 17, 2026 |
+
+: {.cv-table tbl-colwidths="[24,76]"}
+
+## Affiliations and memberships
+
+- Department of Econometrics, Statistics and Applied Economics, Universitat de Barcelona
+- [Research Group on Governments and Markets (GiM)](https://www.ub.edu/gim/), Universitat de Barcelona
+- [Observatory of Analysis and Evaluation of Public Policies (OAP)](https://www.ub.edu/oap/membres/), Universitat de Barcelona
+- Institute for Advanced Research in Business and Economics (INARBE), Universidad Pública de Navarra
+- [Centre for Research in Health Economics (CRES)](https://www.upf.edu/web/cres/investigadors-associats/-/asset_publisher/hPWH34g7unc2/content/gallego-moll-carlos), Universitat Pompeu Fabra (associated researcher)
+- Asociación de Economía de la Salud (AES), member
+
+## Skills
+
+|  |  |
+|---|---|
+| Languages | Catalan and Spanish (native); English (advanced) |
+| Software | R, LaTeX, Microsoft Office |
+| Research | Applied microeconometrics, causal inference, health economics, evidence synthesis, academic writing and publishing, teaching |
+
+: {.cv-table tbl-colwidths="[24,76]"}

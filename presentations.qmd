@@ -1,0 +1,34 @@
+---
+title: "Presentations"
+description: "Conference and seminar presentations by Carlos Gallego-Moll."
+---
+
+## 2026
+
+::: {.plain}
+- [Sep 1–2]{.when} XX International Business Economics Workshop (IBEW), Universitat de les Illes Balears, Mallorca.
+- [Jun 17–19]{.when} XLV Spanish Health Economics Association (AES) Meeting, Sevilla.
+:::
+
+## 2025
+
+::: {.plain}
+- [Oct 24]{.when} Internal seminar of the Research Group on Governments and Markets, Universitat de Barcelona.
+- [Oct 17]{.when} 1st Workshop on Primary Care and Economics, Barcelona.
+- [Sep 3]{.when} XIX International Business Economics Workshop (IBEW), Universitat de les Illes Balears, Mallorca.
+- [Jun 16–18]{.when} XLIV Spanish Health Economics Association (AES) Meeting, Universidad Autónoma de Madrid.
+:::
+
+## 2024
+
+::: {.plain}
+- [Oct 23–24]{.when} IV Multimorbidity LOXO-MULTIPAP International Conference, Instituto de Salud Carlos III, Madrid.
+- [Jun 26–28]{.when} XLIII Spanish Health Economics Association (AES) Meeting, Universidad de La Laguna, Tenerife.
+- [Jun 10–11]{.when} XVIII DEMO Workshop, Department of Business, Universitat Autònoma de Barcelona, Bellaterra.
+:::
+
+## 2023
+
+::: {.plain}
+- [Oct 19–20]{.when} 9th International Workshop on Efficiency in Education, Health and other Public Services, Universidad Autónoma de Madrid.
+:::

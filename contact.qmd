@@ -1,0 +1,17 @@
+---
+title: "Contact"
+description: "Contact details of Carlos Gallego-Moll, Universitat de Barcelona."
+---
+
+**Email:** [{{< var email >}}](mailto:{{< var email >}})
+
+**Affiliation:** Department of Econometrics, Statistics and Applied Economics, Universitat de Barcelona (Barcelona, Spain).
+
+## Elsewhere
+
+::: {.plain}
+- [Google Scholar](https://scholar.google.com/citations?user=HgohTeMAAAAJ)
+- [ORCID: 0000-0001-7215-4584](https://orcid.org/0000-0001-7215-4584)
+- [LinkedIn](https://www.linkedin.com/in/carlos-gallego-economist-datascientist/)
+- [GitHub](https://github.com/cgallegom)
+:::

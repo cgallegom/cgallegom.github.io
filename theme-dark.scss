@@ -1,0 +1,29 @@
+/*-- scss:defaults --*/
+
+$font-family-sans-serif: -apple-system, "Segoe UI", system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-serif: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, "Times New Roman", serif;
+
+$font-family-base: $font-family-serif;
+$headings-font-family: $font-family-sans-serif;
+$headings-font-weight: 600;
+$font-size-base: 1.05rem;
+$line-height-base: 1.65;
+
+$body-bg: #14171a;
+$body-color: #dfe3e6;
+$link-color: #8db4ea;
+$link-decoration: none;
+$link-hover-decoration: underline;
+
+$navbar-bg: $body-bg;
+$navbar-fg: $body-color;
+$navbar-hl: $link-color;
+$footer-bg: $body-bg;
+$footer-fg: #8b949e;
+
+/*-- scss:rules --*/
+
+.navbar {
+  border-bottom: 1px solid rgba(223, 227, 230, 0.14);
+  font-family: $font-family-sans-serif;
+}

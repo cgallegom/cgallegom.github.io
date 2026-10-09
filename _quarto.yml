@@ -1,0 +1,54 @@
+project:
+  type: website
+  output-dir: _site
+  pre-render: scripts/build_publications.R
+  resources:
+    - robots.txt
+
+website:
+  title: "Carlos Gallego-Moll | Health Economist"
+  # Update to the custom domain once it exists (also in robots.txt and assets/structured-data.html)
+  site-url: "https://cgallegom.github.io"
+  description: "Carlos Gallego-Moll is a health economist (PhD candidate, Universidad Pública de Navarra; Research Assistant, Universitat de Barcelona) working on applied microeconometrics, causal inference and health systems."
+  favicon: assets/favicon.svg
+  open-graph: true
+  twitter-card: true
+  back-to-top-navigation: true
+  navbar:
+    title: "Carlos Gallego-Moll"
+    background: body
+    pinned: false
+    left:
+      - href: index.qmd
+        text: Home
+      - href: research.qmd
+        text: Research
+      - href: presentations.qmd
+        text: Presentations
+      - href: teaching.qmd
+        text: Teaching
+      - href: cv.qmd
+        text: CV
+      - href: contact.qmd
+        text: Contact
+  page-footer:
+    left: "Carlos Gallego-Moll · Universitat de Barcelona"
+    right: "Built with [Quarto](https://quarto.org)"
+
+format:
+  html:
+    theme:
+      light: [default, theme-light.scss]
+      dark: [default, theme-dark.scss]
+    css: styles.css
+    include-in-header: assets/structured-data.html
+    toc: false
+    respect-user-color-scheme: true
+    lang: en
+    link-external-newwindow: true
+    link-external-icon: false
+    smooth-scroll: true
+    grid:
+      body-width: 780px
+      sidebar-width: 220px
+      margin-width: 200px
