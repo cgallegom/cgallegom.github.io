@@ -1,21 +1,43 @@
 ---
 title: "Research"
-description: "Publications, working papers and projects of Carlos Gallego-Moll in health economics, applied microeconometrics and causal inference."
+description: "Doctoral thesis, publications, working papers and projects of Carlos Gallego-Moll in health economics, applied microeconometrics and machine learning."
 toc: true
 toc-location: right
 toc-title: "On this page"
 ---
 
+## Doctoral thesis
+
+*{{< var thesis_title >}}*
+
+PhD in Economics, Management and Organization, interuniversity programme of the Universidad Pública de Navarra (UPNA), the Universitat Autònoma de Barcelona (UAB) and the Universitat de les Illes Balears (UIB). Expected 2026.
+
+::: {.callout-note appearance="simple" collapse="true" title="Abstract"}
+In a context of rising costs, health systems with universal coverage need to ground their decisions in evidence to secure efficiency, transparency and equity. Each decision aimed at improving the system calls for a specific analytical approach: description for monitoring, prediction for planning and counterfactual inference for intervention. Catalonia integrates the records of all its publicly funded providers, but these are very large and complex datasets, with hundreds of variables whose interactions are not known in advance and patients who respond differently to the same intervention. Machine learning is designed to handle structures of this kind. However, its application in the Spanish and Catalan setting has been scarce.
+
+This thesis addresses that gap by analysing how applicable machine learning is to health economics questions in a universal-coverage health system, using high-dimensional data. Because the question is broad, the research is organised into three independent chapters. In them, machine learning is not the object of study but the methodological instrument for addressing specific problems of monitoring, planning and intervention in health care.
+
+The first study is a scoping review, a structured map of published research. Of 1,116 records, 121 studies met the inclusion criteria. Most were conducted in the United States (62%) and predicted hospitalisations (58%) or visits (33%). Almost all used information on patients' health, but only 14% included characteristics of the providers of care, and none combined the six groups of variables that standard models of healthcare use consider relevant. On average, studies reported half of the items of the international reporting guideline for prediction models (TRIPOD+AI), but only a quarter of the items specific to artificial intelligence. Causal applications were almost absent. Two of these gaps, the provider side of healthcare use and the step from prediction to causal questions, are taken up by the empirical studies that follow.
+
+The second study addresses a monitoring problem (with potential for planning if finer temporal granularity and ex-ante covariates were available): it assesses whether interpretable machine learning models predict avoidable hospitalisations across primary care teams better than conventional models, and which patient and care-team variables explain them. Using data on 379 primary care teams in Catalonia between 2018 and 2023, it combines more than 620 variables describing the patients each team serves and the team itself, including staffing, service use, quality of care and ownership. Tested on the final year, the best models (a penalised regression and an ensemble of decision trees) reduced prediction error by 19% compared with assuming that each team repeats its previous rate, and by 10% compared with the strongest conventional model. To see what drives these predictions, the study used SHAP values (SHapley Additive exPlanations), which split each prediction into the contribution of each variable. After each team's own past rate, patient morbidity was the largest single group (22% of the total), while the three groups describing how teams work (service use, quality of care and resources) together reached 41%; ownership added almost nothing. These are predictive associations, not causal effects. They point to organisational features that a causal study should test, such as how closely a team's activity matches what it had scheduled and the joint accessibility of nurses and general practitioners.
+
+The third study poses a causal question oriented towards intervention: it analyses whether hospital ownership affects the quality and efficiency of publicly funded elective surgery, and whether that effect is heterogeneous across patients. Catalonia's public network contracts out surgical operations to private hospitals, both for-profit and non-profit, alongside public ones, so that a publicly funded patient may be operated on in either sector. The analysis covers 99,666 elective procedures performed between 2011 and 2019 (cataract surgery, hip and knee replacement, hysterectomy and prostatectomy), in eight comparisons of public hospitals with for-profit or non-profit private ones. The empirical strategy has four sequential stages, each validating the one before: two are conventional (a regression adjusted for patient risk, and matching) and two rely on machine learning (a flexible model to determine the matching, and causal forests to estimate heterogeneous effects). Hospital stay did not differ in seven of the eight comparisons. In the eighth (prostatectomy in public versus non-profit private hospitals), conventional matching estimated stays 58% shorter in the public sector (an implausible result that no clinical protocol could explain), the flexible model reduced this difference to 19% and the causal forest produced an effect indistinguishable from zero, which shows that the conventional estimate is not robust. Readmissions were too infrequent to detect most differences, with one exception: a higher risk after prostatectomy in for-profit private hospitals, which calls for monitoring rather than action. No subgroups of patients with heterogenous effects were identified; however, because the causal forests failed to rank individual effects systematically, this result is not a proof of homogeneity. The general absence of differences is consistent with the framework of contracted provision in Catalonia, characterised by administrative referral and uniform tariffs.
+
+Machine learning's usefulness in health economics therefore depends on the nature of the research question, and the empirical strategy for it varies with the type of decision: describing contemporaneous variation across primary care teams makes it possible to monitor current performance, whereas using the models for planning would require strictly ex-ante covariates and prospective validation. In the causal domain, machine learning does not substitute for identification: it works as a robustness check against alternative specifications and potentially reveal heterogeneity that averages conceal, yielding only conditional associations when the identifying assumptions cannot be sustained. In any case, internal organisation and provision mechanisms account for more of the variation than legal ownership, although the available evidence remains observational. Two priorities follow: recording supply-side variables at a finer grain and higher frequency (guaranteeing researchers' access to them), and formulating quasi-experimental designs on the Catalan records. Through three independent studies, this thesis illustrates the methodological bases for monitoring, planning and intervening with these tools in a health system with rich data but little prior use of these methods.
+
+**Keywords:** Health economics; Machine learning; Healthcare utilisation; Avoidable hospitalisations; Primary care performance; Hospital ownership; Interpretable machine learning; Heterogeneous treatment effects; Scoping review.
+:::
+
 ## Research agenda
 
-My work centres on health economics and policy evaluation. The main lines are:
+My work centres on health economics and public policy evaluation. The main lines are:
 
 - **Hospital quality, efficiency and ownership.** Differences in outcomes and efficiency between public and private hospitals, including elective surgery in Catalonia.
 - **Primary care and system shocks.** Effects of the intensity of COVID-19 on primary care models and outcomes, using continuous difference-in-differences designs.
 - **Healthcare utilisation and avoidable hospitalisations.** Explaining variation across patients and providers, with interpretable machine learning as a complement to econometric analysis.
 - **Multimorbidity, ageing and resource use.** The burden and health-care costs of chronic and multiple long-term conditions.
 
-Methods: applied microeconometrics, causal inference (difference-in-differences), interpretable machine learning and evidence synthesis.
+Methods: applied microeconometrics and causal inference (matching, difference-in-differences), machine learning (including interpretable models and causal forests) and evidence synthesis.
 
 ## Working papers
 

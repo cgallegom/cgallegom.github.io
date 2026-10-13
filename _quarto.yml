@@ -9,10 +9,12 @@ website:
   title: "Carlos Gallego-Moll | Health Economist"
   # Update to the custom domain once it exists (also in robots.txt and assets/structured-data.html)
   site-url: "https://cgallegom.github.io"
-  description: "Carlos Gallego-Moll is a health economist (PhD candidate, Universidad Pública de Navarra; Research Assistant, Universitat de Barcelona) working on applied microeconometrics, causal inference and health systems."
+  description: "Carlos Gallego-Moll is a health economist (PhD candidate, Universidad Pública de Navarra; Research Assistant, Universitat de Barcelona) working on applied microeconometrics, machine learning and causal inference for health and public policy questions."
   favicon: assets/favicon.svg
-  open-graph: true
-  twitter-card: true
+  open-graph:
+    image: assets/photo.jpg
+  twitter-card:
+    image: assets/photo.jpg
   back-to-top-navigation: true
   navbar:
     title: "Carlos Gallego-Moll"

@@ -19,7 +19,7 @@ description: "Education, employment, grants and academic service of Carlos Galle
 
 |  |  |
 |---|---|
-| 2026 (expected) | **Ph.D. Candidate**, Economics, Management and Organization, Universidad Pública de Navarra |
+| 2026 (expected) | **Ph.D. Candidate**, Economics, Management and Organization. Interuniversity programme of the Universidad Pública de Navarra, the Universitat Autònoma de Barcelona and the Universitat de les Illes Balears |
 | 2021 | **M.Sc. Big Data & Data Science applied to Economics and Business Administration**, Universidad Nacional de Educación a Distancia |
 | 2020 | **M.Sc. Economics, Regulation and Competition in Public Services**, Universitat de Barcelona |
 | 2019 | **B.Sc. Economics**, Universitat de les Illes Balears |

@@ -3,8 +3,9 @@ title: "Carlos Gallego-Moll"
 pagetitle: "Carlos Gallego-Moll | Health Economist"
 about:
   template: trestles
-  # image: assets/photo.jpg      # add a square portrait here when available
-  # image-shape: round
+  image: assets/photo.jpg
+  image-alt: "Carlos Gallego-Moll presenting at the XLV Spanish Health Economics Association meeting"
+  image-shape: round
   links:
     - icon: mortarboard-fill
       text: Google Scholar
@@ -20,11 +21,17 @@ about:
       href: https://github.com/cgallegom
 ---
 
-Health economist. PhD candidate in Economics, Management and Organization at the Universidad Pública de Navarra, and Research Assistant in the Department of Econometrics, Statistics and Applied Economics at the Universitat de Barcelona.
+Health economist. PhD candidate in the interuniversity doctoral programme in Economics, Management and Organization of the Universidad Pública de Navarra (UPNA), the Universitat Autònoma de Barcelona (UAB) and the Universitat de les Illes Balears (UIB), expected in 2026. Research Assistant in the Department of Econometrics, Statistics and Applied Economics at the Universitat de Barcelona.
 
-My research uses applied microeconometrics and causal inference to study how health systems perform: the quality and efficiency of hospital care, the use of health services, and the effects of system-wide shocks such as COVID-19 on primary care. I complement identification strategies with interpretable machine learning, mainly to study prediction and heterogeneity, for example to explain variation in avoidable hospitalisations. My work draws on large administrative health datasets from Catalonia.
+My research uses applied microeconometrics and machine learning as methodological tools to answer specific questions in economics, especially in health and public policy. Each question calls for a different approach: description for monitoring, prediction for planning and counterfactual inference for intervention. Machine learning is particularly useful with high-dimensional data, unknown relationships and multiple interactions, while microeconometric designs identify causal effects. I apply them to the quality and efficiency of hospital care, the use of health services and the effects of system-wide shocks such as COVID-19 on primary care, using large administrative health datasets from Spain and Catalonia.
 
 I am a member of the [Research Group on Governments and Markets (GiM)](https://www.ub.edu/gim/) and the [Observatory of Analysis and Evaluation of Public Policies (OAP)](https://www.ub.edu/oap/membres/) at the Universitat de Barcelona, and an associated researcher at the [Centre for Research in Health Economics (CRES-UPF)](https://www.upf.edu/web/cres/investigadors-associats/-/asset_publisher/hPWH34g7unc2/content/gallego-moll-carlos).
+
+## Doctoral thesis
+
+*{{< var thesis_title >}}*
+
+The thesis applies and evaluates machine learning methods for health economics questions using Spanish and Catalan health data. It maps what the applied literature on machine-learning prediction of healthcare utilisation does and omits, predicts and interprets avoidable hospitalisations across primary care teams, and estimates the effect of hospital ownership on the quality and efficiency of elective surgery. [Read the full abstract](research.qmd#doctoral-thesis).
 
 ## News
 
