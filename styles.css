@@ -1,0 +1,31 @@
+/* Shared layout rules; colours come from the light/dark theme files. */
+
+.navbar-brand { font-weight: 600; letter-spacing: 0.01em; }
+
+h1.title { margin-bottom: 0.6rem; }
+h2 { margin-top: 2.2rem; font-size: 1.35rem; padding-bottom: 0.25rem; border-bottom: 1px solid rgba(128, 128, 128, 0.25); }
+h3 { margin-top: 1.6rem; font-size: 1.05rem; color: var(--bs-secondary-color, #6b7280); letter-spacing: 0.04em; }
+
+/* Publication-style entries: hanging indent, no bullets */
+.pub { margin: 0 0 0.85rem 0; padding-left: 1.6rem; text-indent: -1.6rem; line-height: 1.5; }
+.pub p { margin: 0; }
+
+/* Plain lists (news, presentations, funded projects) */
+.plain ul { list-style: none; padding-left: 0; }
+.plain li { margin-bottom: 0.55rem; }
+.when { font-family: var(--bs-font-sans-serif); font-size: 0.85em; font-weight: 600; color: var(--bs-secondary-color, #6b7280); margin-right: 0.4rem; white-space: nowrap; }
+
+/* CV tables: date column + description, no header row */
+table.cv-table { width: 100%; margin-bottom: 1.2rem; }
+table.cv-table thead { display: none; }
+table.cv-table td { border: 0; padding: 0.3rem 0.6rem 0.3rem 0; vertical-align: top; background: transparent; }
+table.cv-table td:first-child { font-family: var(--bs-font-sans-serif); font-size: 0.88em; font-weight: 600; color: var(--bs-secondary-color, #6b7280); white-space: nowrap; }
+
+/* Quarto "about" page: keep the sidebar links tidy */
+.about-links .about-link { font-family: var(--bs-font-sans-serif); font-size: 0.92rem; }
+
+/* Callout for items still to be completed by the author */
+.todo { border-left: 3px solid #c0392b; padding-left: 0.8rem; color: #c0392b; }
+
+/* The page description feeds the meta tags; do not repeat it as a visible subtitle */
+.quarto-title-block .description { display: none; }
