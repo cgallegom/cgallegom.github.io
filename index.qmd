@@ -21,7 +21,7 @@ about:
       href: https://github.com/cgallegom
 ---
 
-Economist. PhD candidate in the interuniversity doctoral programme in Economics, Management and Organization of the Universidad Pública de Navarra (UPNA), the Universitat Autònoma de Barcelona (UAB) and the Universitat de les Illes Balears (UIB), expected in 2026. Research Assistant in the Department of Econometrics, Statistics and Applied Economics at the Universitat de Barcelona.
+Economist. PhD candidate in the interuniversity doctoral programme in Economics, Management and Organization of the Universidad Pública de Navarra (UPNA), the Universitat Autònoma de Barcelona (UAB) and the Universitat de les Illes Balears (UIB), expected in 2026. Research Technician in the Department of Econometrics, Statistics and Applied Economics at the Universitat de Barcelona.
 
 My research uses applied microeconometrics and machine learning as methodological tools to answer specific questions in economics, especially in health and public policy. Each question calls for a different approach: description for monitoring, prediction for planning and counterfactual inference for intervention. Machine learning is particularly useful with high-dimensional data, unknown relationships and multiple interactions, while microeconometric designs identify causal effects. I apply them to the quality and efficiency of hospital care, the use of health services and the effects of system-wide shocks such as COVID-19 on primary care, using large administrative health datasets from Spain and Catalonia.
 

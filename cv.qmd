@@ -10,7 +10,7 @@ description: "Education, employment, grants and academic service of Carlos Galle
 
 |  |  |
 |---|---|
-| Oct 2024 – present | **Research Assistant in Economics**, Universitat de Barcelona |
+| Oct 2024 – present | **Research Technician in Economics**, Universitat de Barcelona |
 | Mar 2022 – Oct 2024 | **Data Scientist / Researcher**, Foundation University Institute for Primary Health Care Research Jordi Gol (IDIAPJGol) |
 
 : {.cv-table tbl-colwidths="[24,76]"}
