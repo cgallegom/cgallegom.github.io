@@ -5,7 +5,14 @@ description: "Contact details of Carlos Gallego-Moll, Universitat de Barcelona."
 
 **Email:** [{{< var email >}}](mailto:{{< var email >}})
 
-**Affiliation:** Department of Econometrics, Statistics and Applied Economics, Universitat de Barcelona (Barcelona, Spain).
+## Affiliations
+
+::: {.plain}
+- **Universitat de Barcelona**: Department of Econometrics, Statistics and Applied Economics; [Research Group on Governments and Markets (GiM)](https://www.ub.edu/gim/); [Observatory of Analysis and Evaluation of Public Policies (OAP)](https://www.ub.edu/oap/membres/).
+- **Universidad Pública de Navarra**: Institute for Advanced Research in Business and Economics (INARBE).
+- **Universitat Pompeu Fabra**: [Centre for Research in Health Economics (CRES)](https://www.upf.edu/web/cres/investigadors-associats/-/asset_publisher/hPWH34g7unc2/content/gallego-moll-carlos/maximized), associated researcher.
+- **Asociación de Economía de la Salud (AES)**: member.
+:::
 
 ## Elsewhere
 

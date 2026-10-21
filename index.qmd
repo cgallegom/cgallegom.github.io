@@ -43,4 +43,4 @@ The thesis applies and evaluates machine learning methods for health economics q
 - [2026]{.when} New working paper: [Quality and efficiency differences between private and public hospitals in Catalonia and Norway](https://www.ub.edu/irea/working_papers/2026/202611.pdf) (IREA Working Paper 2026/11).
 :::
 
-See [Research](research.qmd) for publications, working papers and projects.
+See [Publications](publications.qmd) for journal articles and [Research](research.qmd) for working papers, work in progress and projects.

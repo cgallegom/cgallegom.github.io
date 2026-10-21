@@ -65,10 +65,6 @@ Methods: applied microeconometrics and causal inference (matching, difference-in
 "Models of care for people living with multimorbidity in primary care settings: a scoping review protocol of Primary Health Care-oriented approaches". With the MM-SNS team. *Submitted.*
 :::
 
-## Publications
-
-{{< include _generated/publications.md >}}
-
 ## Research projects
 
 Participation in competitive research projects:

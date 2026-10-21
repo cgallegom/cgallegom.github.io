@@ -15,8 +15,9 @@ Requires Quarto >= 1.4 and R with the `bib2df` package (`install.packages("bib2d
 
 | Page | File | Source of content |
 |---|---|---|
-| Home | `index.qmd` | Written by hand (about + news) |
-| Research | `research.qmd` | Agenda, work in progress and projects by hand; **publications and working papers are generated** |
+| About me | `index.qmd` | Written by hand (about + news) |
+| Publications | `publications.qmd` | **Generated** journal articles (from `data/own-bib.bib`) |
+| Research | `research.qmd` | Agenda, work in progress and projects by hand; **working papers are generated** |
 | Presentations | `presentations.qmd` | By hand |
 | Teaching | `teaching.qmd` | By hand |
 | CV | `cv.qmd` | By hand (online CV, no PDF download yet) |

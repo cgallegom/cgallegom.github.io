@@ -13,7 +13,7 @@ description: "Conference and seminar presentations by Carlos Gallego-Moll."
 ## 2025
 
 ::: {.plain}
-- [Oct 24]{.when} Internal seminar of the Research Group on Governments and Markets, Universitat de Barcelona.
+- [Oct 24]{.when} Governments and Markets (GiM) Seminar, Universitat de Barcelona.
 - [Oct 17]{.when} 1st Workshop on Primary Care and Economics, Barcelona.
 - [Sep 3]{.when} XIX International Business Economics Workshop (IBEW), Universitat de les Illes Balears, Mallorca.
 - [Jun 16–18]{.when} XLIV Spanish Health Economics Association (AES) Meeting, Universidad Autónoma de Madrid.

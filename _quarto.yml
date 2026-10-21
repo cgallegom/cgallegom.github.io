@@ -22,7 +22,9 @@ website:
     pinned: false
     left:
       - href: index.qmd
-        text: Home
+        text: About me
+      - href: publications.qmd
+        text: Publications
       - href: research.qmd
         text: Research
       - href: presentations.qmd

@@ -1,0 +1,6 @@
+---
+title: "Publications"
+description: "Peer-reviewed publications of Carlos Gallego-Moll in health economics, applied microeconometrics and machine learning."
+---
+
+{{< include _generated/publications.md >}}
