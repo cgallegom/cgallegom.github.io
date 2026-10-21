@@ -2,26 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://cgallegom.github.io/teaching.html</loc>
-    <lastmod>2026-10-13T13:51:39.714Z</lastmod>
+    <lastmod>2026-10-21T14:58:15.234Z</lastmod>
   </url>
   <url>
-    <loc>https://cgallegom.github.io/presentations.html</loc>
-    <lastmod>2026-10-13T13:51:39.700Z</lastmod>
+    <loc>https://cgallegom.github.io/publications.html</loc>
+    <lastmod>2026-10-21T14:58:15.226Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cgallegom.github.io/index.html</loc>
+    <lastmod>2026-10-21T14:58:15.234Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cgallegom.github.io/contact.html</loc>
+    <lastmod>2026-10-21T14:58:15.238Z</lastmod>
   </url>
   <url>
     <loc>https://cgallegom.github.io/cv.html</loc>
     <lastmod>2026-10-14T12:07:20.196Z</lastmod>
   </url>
   <url>
-    <loc>https://cgallegom.github.io/contact.html</loc>
-    <lastmod>2026-10-13T13:51:39.690Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cgallegom.github.io/index.html</loc>
-    <lastmod>2026-10-14T12:07:20.320Z</lastmod>
+    <loc>https://cgallegom.github.io/presentations.html</loc>
+    <lastmod>2026-10-21T14:58:15.210Z</lastmod>
   </url>
   <url>
     <loc>https://cgallegom.github.io/research.html</loc>
-    <lastmod>2026-10-13T13:51:39.703Z</lastmod>
+    <lastmod>2026-10-21T14:58:15.226Z</lastmod>
   </url>
 </urlset>
