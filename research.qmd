@@ -30,14 +30,18 @@ Machine learning's usefulness in health economics therefore depends on the natur
 
 ## Research agenda
 
-My work centres on health economics and public policy evaluation. The main lines are:
+So far, my work has centred on health economics and public policy evaluation. Four lines stand out:
 
 - **Hospital quality, efficiency and ownership.** Differences in outcomes and efficiency between public and private hospitals, including elective surgery in Catalonia.
-- **Primary care and system shocks.** Effects of the intensity of COVID-19 on primary care models and outcomes, using continuous difference-in-differences designs.
+- **Primary care and system shocks.** Effects of the intensity of COVID-19 on primary care models and outcomes, using continuous difference-in-differences designs, and the role of professional ownership in the efficiency of publicly funded primary care.
 - **Healthcare utilisation and avoidable hospitalisations.** Explaining variation across patients and providers, with interpretable machine learning as a complement to econometric analysis.
-- **Multimorbidity, ageing and resource use.** The burden and health-care costs of chronic and multiple long-term conditions.
+- **Multimorbidity, ageing and resource use.** The burden and health-care costs of chronic and multiple long-term conditions, including paediatric type 1 diabetes.
 
 Methods: applied microeconometrics and causal inference (matching, difference-in-differences), machine learning (including interpretable models and causal forests) and evidence synthesis.
+
+### Beyond health
+
+Most of this work sits in health economics and asks how contracts and ownership structures shape the efficiency and equity of publicly funded services. That is a question about the state and the market, and the methods do not depend on the setting. I am open to applying them to other questions about markets, in health or elsewhere: the effects of contracting out, privatisation or regulation, or of a specific intervention in the public sector or in a firm. Causal designs suit those questions. Where the aim is planning, such as anticipating demand or risk, prediction is the better tool. If you work on something similar, [get in touch](contact.qmd).
 
 ## Working papers
 
@@ -54,15 +58,23 @@ Methods: applied microeconometrics and causal inference (matching, difference-in
 :::
 
 ::: {.pub}
-"Public and Private Hospital Care in Catalan Elective Surgery: Average Differences and Patient-level Heterogeneity". With Laia Maynou (UB).
-:::
-
-::: {.pub}
 "The Progressive Burden of Bronchiectasis: Comparing Quality of Life Outcomes Between Hospitalised and Non-Hospitalised Patients". With Laia Maynou (UB) and Alistair McGuire (LSE). *Revise and resubmit.*
 :::
 
 ::: {.pub}
-"Models of care for people living with multimorbidity in primary care settings: a scoping review protocol of Primary Health Care-oriented approaches". With the MM-SNS team. *Submitted.*
+"Models of Care for People Living with Multimorbidity in Primary Care Settings: A Scoping Review Protocol of Primary Health Care-Oriented Approaches". With the MM-SNS team. *Revise and resubmit.*
+:::
+
+::: {.pub}
+"Public and Private Hospital Care in Catalan Elective Surgery: Average Differences and Patient-Level Heterogeneity". With Laia Maynou (UB).
+:::
+
+::: {.pub}
+"Doctors as Owners: Professional Ownership and Efficiency in Publicly Funded Primary Care". With Joan Costa-i-Font (LSE) and Laia Maynou (UB).
+:::
+
+::: {.pub}
+"The Incremental Healthcare Cost of Diabetic Ketoacidosis at Onset of Paediatric Type 1 Diabetes: A Population-Based, Doubly Robust Analysis of Linked Primary Care and Hospital Records in Catalonia, Spain". With Concepción Violan (IDIAPJGol), Marc Casajuana (IDIAPJGol), Fabiana Ganem (IGTP) and Bibiana Quirant Sánchez (IGTP).
 :::
 
 ## Research projects
