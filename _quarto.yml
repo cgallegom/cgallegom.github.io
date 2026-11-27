@@ -4,6 +4,7 @@ project:
   pre-render: scripts/build_publications.R
   resources:
     - robots.txt
+    - Carlos_Gallego-Moll_CV.pdf
 
 website:
   title: "Carlos Gallego-Moll | Economist"

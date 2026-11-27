@@ -3,8 +3,11 @@ title: "Curriculum Vitae"
 description: "Education, employment, grants and academic service of Carlos Gallego-Moll."
 ---
 
-<!-- A downloadable PDF of the CV is intentionally not offered yet.
-     When it is ready, add a link here, e.g. [Download CV (PDF)](assets/cv.pdf). -->
+<!-- The PDF is the job market CV, built from
+     candidatures/EconJobMarket_2026-27/_comun/CV/cv-ejm.tex. Keep the file name
+     stable: the PDF itself links here as its "latest version". -->
+
+[[]{.bi .bi-file-earmark-pdf} Download CV (PDF)](Carlos_Gallego-Moll_CV.pdf){.btn .btn-outline-primary}
 
 ## Employment
 

@@ -40,7 +40,7 @@ Notes on the generated lists:
 - [ ] Set the institutional email in `_variables.yml`.
 - [ ] Add a portrait: put `assets/photo.jpg` (square) and uncomment `image:` in `index.qmd`.
 - [ ] When a custom domain exists, update `site-url` in `_quarto.yml`, `url` in `assets/structured-data.html` and the `Sitemap:` line in `robots.txt`.
-- [ ] CV download is **intentionally not offered**. When ready, add the link in `cv.qmd` (see the comment at the top).
+- [x] CV download: `Carlos_Gallego-Moll_CV.pdf` (site root, listed in `resources`), linked from `cv.qmd`. Copy the new PDF over it when the CV changes.
 - [ ] Submit the sitemap in Google Search Console.
 
 ## Publishing (GitHub Pages)
